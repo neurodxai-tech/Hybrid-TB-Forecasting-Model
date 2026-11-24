@@ -97,3 +97,8 @@ cat Outputs/06_Logs_and_Reproducibility/reproducibility_check.csv
 Neural networks are retrained from fixed seeds (no stored weights). Deterministic results must PASS exactly;
 neural/XGBoost/Prophet results may show CHECK on other hardware or library versions (tolerance 0.5 MAPE points).
 `results/reproducibility_check.csv` is the check from the manuscript run.
+
+**macOS:** XGBoost needs the OpenMP runtime, which pip does not install. After `pip install`, run
+`conda install -c conda-forge llvm-openmp -y` (or `brew install libomp`).
+Register the environment as a kernel and execute with it, so the notebook does not run in another environment:
+`python -m ipykernel install --user --name tb_forecast` and add `--ExecutePreprocessor.kernel_name=tb_forecast` to the `nbconvert` command.
