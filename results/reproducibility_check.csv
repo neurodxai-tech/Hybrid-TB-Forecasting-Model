@@ -1,0 +1,19 @@
+Quantity,Published,This run,Type,Status
+Back-cast Jan 2015,1451.0,1451.0,deterministic,PASS
+Growth 2018->2024 (%),43.0,42.9527885146328,deterministic,PASS
+Kruskal-Wallis H (2015-2024),60.99,60.991239669421475,deterministic,PASS
+Bai-Perron F,17.88,17.881824616807457,deterministic,PASS
+SARIMA 2024 MAPE,9.6,9.59584083842675,deterministic,PASS
+SARIMAX-breaks 2024 MAPE,9.31,9.311921407840456,deterministic,PASS
+SARIMA 2020 MAPE (constrained refit),21.11,21.11449245681528,deterministic,PASS
+SARIMA pooled MAPE,13.23,13.226576456084324,deterministic,PASS
+SARIMAX-lockdown pooled MAPE,13.33,13.33311104722207,deterministic,PASS
+Lockdown coefficient (2015-2023),-990.0,-990.0628834793264,deterministic,PASS
+Prophet 2024 MAPE,10.34,10.34476831304702,platform-dependent,PASS
+LSTM 2024 MAPE (seed-avg),13.97,13.97360472051688,platform-dependent,PASS
+CNNAR 2024 MAPE (seed-avg),10.14,10.141880699618135,platform-dependent,PASS
+XGBoost 2024 MAPE,10.61,10.606771724344972,platform-dependent,PASS
+Hybrid 2024 MAPE (seed-avg),8.46,8.464847971539118,platform-dependent,PASS
+Break-hybrid 2024 MAPE (seed-avg),7.39,7.3859223198062836,platform-dependent,PASS
+Hybrid pooled MAPE,15.4,15.404344876530732,platform-dependent,PASS
+LSTM pooled MAPE,13.63,13.630194871054666,platform-dependent,PASS
